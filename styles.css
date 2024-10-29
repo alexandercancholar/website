@@ -1,0 +1,239 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', 'Times New Roman', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow: auto;
+}
+
+/* Header Section */
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url('IMG_0351.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10%;
+    color: #fff;
+}
+
+.header-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border: 1px solid #fff;
+    max-width: 400px;
+    text-align: left;
+}
+
+header p:first-child {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+header h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.portfolio-text {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 10%;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.arrow:hover {
+    transform: translateY(10px);
+}
+
+/* Bio Section */
+.bio-section {
+    display: flex;
+    padding: 100px 10%;
+    background-color: #111;
+    color: #fff;
+    align-items: center;
+}
+
+.bio-photo {
+    flex: 1;
+    max-width: 400px;
+    margin-right: 40px;
+}
+
+.bio-photo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bio-text {
+    flex: 2;
+}
+
+.bio-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+}
+
+.bio-text p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 80px 10%;
+    background-color: #222;
+    color: #fff;
+}
+
+.projects-section h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 20px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.project-card h4 {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Projects Navigation */
+.projects {
+    padding: 40px 10%;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.project-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-links a:hover {
+    background-color: #ddd;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding-right: 5%;
+    }
+    .header-content {
+        max-width: 300px;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    header h2 {
+        font-size: 2.5rem;
+    }
+    header p:first-child {
+        font-size: 0.9rem;
+    }
+    .bio-section {
+        flex-direction: column;
+        padding: 50px 5%;
+    }
+    .bio-photo {
+        margin: 0 0 20px 0;
+    }
+    .bio-photo img {
+        max-width: 100%;
+    }
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-links a {
+        margin: 10px 5px;
+        padding: 8px 15px;
+    }
+}
